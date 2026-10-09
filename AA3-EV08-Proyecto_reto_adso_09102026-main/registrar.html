@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar · Sistema de inventario</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="barra">
+            <a class="marca" href="index.html">Sistema de inventario</a>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="registrar.html">Registrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h1>Registrar producto</h1>
+        <p>Completa los datos para agregar un producto al inventario.</p>
+
+        <form id="form-producto" class="tarjeta" action="productos.html" method="GET">
+            <div class="campo">
+                <label for="nombreProducto">Nombre del producto</label>
+                <small>Ingresa el nombre comercial del producto.</small>
+                <input type="text" id="nombreProducto" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="precioProducto">Precio</label>
+                <input type="number" id="precioProducto" name="precio" min="0" step="0.01" required>
+            </div>
+
+            <div class="campo">
+                <label for="cantidadProducto">Cantidad disponible</label>
+                <input type="number" id="cantidadProducto" name="cantidad" min="0" required>
+            </div>
+
+            <div class="campo">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado" placeholder="Activo / Inactivo">
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoría</label>
+                <input type="text" id="categoria" name="categoria_id">
+            </div>
+
+            <div class="acciones">
+                <button type="button" id="btn-guardar" class="btn">Guardar</button>
+                <a class="btn btn-secundario" href="productos.html">Cancelar</a>
+            </div>
+        </form>
+    </main>
+
+    <footer class="pie">Sistema de inventario · ADSO</footer>
+
+    <script src="assets/js/datos.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

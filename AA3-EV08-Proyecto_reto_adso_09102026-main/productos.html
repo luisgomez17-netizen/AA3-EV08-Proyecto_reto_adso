@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos · Sistema de inventario</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  
+</table>
+    <header class="encabezado">
+        <div class="barra">
+            <a class="marca" href="index.html">Sistema de inventario</a>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="registrar.html">Registrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h1>Listado de productos</h1>
+        <p>Consulta los productos registrados en el inventario.</p>
+
+        <section class="tarjeta">
+            <table class="tabla" id="tabla-productos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-productos">
+                    <!-- Los elementos se cargan mediante JS o PHP -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="pie">Sistema de inventario · ADSO</footer>
+
+    <script src="assets/js/datos.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
